@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <h1>Registration</h1>
+    </header>
+    </div>
+
+    <div class="container">
+      <fieldset>
+        <form onsubmit="validate();">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="fname" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" required />
+          <div class="form-group">
+            <script type="text/javascript">
+              function validate(){
+                if(document.getElementById("email").value.includes("@quinnipiac.edu") == false){
+                  alert("Invalid Email");
+                  console.log("called");
+                }
+
+              }
+            </script>
+            <label>Email</label>
+            <input type="text" id="email" class="form-control" />
+          </div>
+          </div>
+          <div class="form-group">
+            <label>Bio</label><textarea class="form-control"></textarea>
+          </div>
+
+          <input type="submit" value="Submit" class="btn btn-primary"></input>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
