@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Team</title>
+    <title>Session</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
@@ -35,95 +35,93 @@
 
   <div class="container">
     <header>
-      <h1>Team - <span id="team_name"></span></h1>
+      <h1>Student - <span id="student_name"></span></h1>
       <script type="text/javascript">
-        var title = getUrlParameter('team');
+        var title = getUrlParameter('student');
         console.log(title);
-        document.getElementById('team_name').innerHTML = title;
+        document.getElementById('student_name').innerHTML = title;
       </script>
     </header>
   </div>
 
   <div class="container boxed mt10">
-    <h4>Session - 000001</h4>
-    <table class="table table-bordered">
+    <h4>Evaluations By Student</h4>
+    <table class="table table-hover">
       <thead>
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
-          <th></th>
+          <th><!--btn placeholder--></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Charles</td>
           <td>Zhu</td>
-          <td><a href="p_session.html?student=Charles%20Zhu" class="btn btn-primary">View Evaluations</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
         <tr>
           <td>Carly</td>
           <td>Emile</td>
-          <td><a href="p_session.html?student=Carly%20Emile" class="btn btn-primary">View Evaluations</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
         <tr>
           <td>Larry</td>
           <td>Fine</td>
-          <td><a href="p_session.html?student=Larry%20Fine" class="btn btn-primary">View Evaluations</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
         <tr>
           <td>Moe</td>
           <td>Howard</td>
-          <td><a href="p_session.html?student=Moe%20Howard" class="btn btn-primary">View Evaluations</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
         <tr>
           <td>Curly</td>
           <td>Howard</td>
-          <td><a href="p_session.html?student=Curly%20Howard" class="btn btn-primary">View Evaluations</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="container boxed mt10">
-    <h4>Session - 000002</h4>
-    <table class="table table-bordered">
+    <h4>Evaluations Of Student</h4>
+    <table class="table table-hover">
       <thead>
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
-          <th></th>
+          <th><!--btn placeholder--></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Charles</td>
           <td>Zhu</td>
-          <td><a href="p_session.html?student=Charles%20Zhu" class="btn btn-primary">View Evaluation</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
         <tr>
           <td>Carly</td>
           <td>Emile</td>
-          <td><a href="p_session.html?student=Carly%20Emile" class="btn btn-primary">View Evaluation</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
         <tr>
           <td>Larry</td>
           <td>Fine</td>
-          <td><a href="p_session.html?student=Larry%20Fine" class="btn btn-primary">View Evaluation</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
         <tr>
           <td>Moe</td>
           <td>Howard</td>
-          <td><a href="p_session.html?student=Moe%20Howard" class="btn btn-primary">View Evaluation</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
         <tr>
           <td>Curly</td>
           <td>Howard</td>
-          <td><a href="p_session.html?student=Curly%20Howard" class="btn btn-primary">View Evaluation</a></td>
+          <td><a href="p_evaluation_view.html" class="btn btn-primary">View Evaluation</a></td>
         </tr>
       </tbody>
     </table>
-  </div>
-
 </body>
 
 </html>
