@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project Form</title>
+  <title>Course Form</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css" />
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
   <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
@@ -34,10 +34,10 @@
 
   <div class="container">
    <header>
-     <h1>Project Form - <span id="addUpdate"></span></h1>
+     <h1>Course Form - <span id="addUpdate"></span></h1>
      <script type="text/javascript">
-       var project = getUrlParameter('project');
-       if(project)
+       var course = getUrlParameter('course');
+       if(course)
          document.getElementById('addUpdate').innerHTML = 'Update';
        else
          document.getElementById('addUpdate').innerHTML = 'Add';
@@ -46,36 +46,36 @@
   </div>
   <div class="container boxed pb10 pt10">
     <form>
-      <label>Project Name</label>
-      <input type="text" class="form-control" name="project" id="projectName" required></input>
+      <label>Course Name</label>
+      <input type="text" class="form-control" name="name" id="name" required></input>
       <script type="text/javascript">
-        var team = getUrlParameter('project');
-        if(team)
-          document.getElementById('projectName').setAttribute("value", team);
+        var course = getUrlParameter('course');
+        if(course)
+          document.getElementById('name').setAttribute('value', course  )
       </script>
-
-      <label>Start Date</label>
-      <input type="text" class="form-control" name="project" id="startDate" required></input>
-
-      <label>End Date</label>
-      <input type="text" class="form-control" name="project" id="endDate" required></input>
+      <label>Course Number</label>
+      <input type="text" class="form-control" name="number" id="number" required></input>
       <script type="text/javascript">
-        var start = getUrlParameter('start');
-        var end = getUrlParameter('end');
-        if(start)
-          document.getElementById('startDate').setAttribute("value", start);
-        if(end)
-          document.getElementById('endDate').setAttribute("value", end);
+        var number = getUrlParameter('number');
+        if(number)
+          document.getElementById('number').setAttribute('value', number)
       </script>
-
-      <script>
-        $( function() {
-          $( "#startDate,#endDate" ).datepicker();
-        } );
+      <label>Term</label>
+      <select class="form-control" required>
+        <option hidden disabled selected value="" id="term">--SELECT--</option>
+        <option value="SPRING2017">SPRING2017</option>
+        <option value="FALL2017">FALL2017</option>
+        <option value="SPRING2018">SPRING2018</option>
+        <option value="FALL2018">FALL2018</option>
+      </select>
+      <script type="text/javascript">
+        var term = getUrlParameter('term');
+        if(term){
+          document.getElementById('term').setAttribute('value', term);
+          document.getElementById('term').innerHTML = term;
+        }
       </script>
-
       <input type="submit" value="Submit" class="btn btn-primary mt10" />
-
     </form>
   </div>
 

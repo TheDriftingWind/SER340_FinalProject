@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project Form</title>
+  <title>Session Form</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css" />
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
   <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
@@ -34,7 +34,7 @@
 
   <div class="container">
    <header>
-     <h1>Project Form - <span id="addUpdate"></span></h1>
+     <h1>Session Form - <span id="addUpdate"></span></h1>
      <script type="text/javascript">
        var project = getUrlParameter('project');
        if(project)
@@ -46,12 +46,12 @@
   </div>
   <div class="container boxed pb10 pt10">
     <form>
-      <label>Project Name</label>
+      <label>Session Name</label>
       <input type="text" class="form-control" name="project" id="projectName" required></input>
       <script type="text/javascript">
-        var team = getUrlParameter('project');
-        if(team)
-          document.getElementById('projectName').setAttribute("value", team);
+        var session = getUrlParameter('session');
+        if(session)
+          document.getElementById('projectName').setAttribute("value", session);
       </script>
 
       <label>Start Date</label>
